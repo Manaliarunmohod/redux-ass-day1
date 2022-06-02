@@ -10,3 +10,11 @@ export const incrementCountAction=(count)=>
 
 };
 };
+export const decrementCountAction=(count)=>
+{
+    return{
+        type:appAction.DECREMENT_COUNT,
+        payload:count
+
+};
+};

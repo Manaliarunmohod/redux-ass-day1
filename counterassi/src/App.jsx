@@ -1,7 +1,7 @@
 
 import { useSelector,useDispatch } from 'react-redux'
 import './App.css'
-import {incrementCountAction} from "./Redux/action"
+import {incrementCountAction,decrementCountAction} from "./Redux/action"
 
 function App() {
   //const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
     <div className="App">
      <h1>count:{count}</h1>
      <button onClick={()=>{dispatch(incrementCountAction(1))}}>ADD</button>
-     <button onClick={()=>{dispatch(incrementCountAction(-1))}}>SUB</button>
+     <button onClick={()=>{dispatch(decrementCountAction(-1))}}>SUB</button>
     </div>
   )
 }
